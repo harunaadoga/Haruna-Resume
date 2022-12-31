@@ -1,0 +1,302 @@
+%-------------------------
+% Resume in Latex
+% Author : Sidratul Muntaha Ahmed
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{lastpage}
+\rfoot{\addressfont\itshape\textcolor{color2}{Page \thepage\ of \pageref{LastPage}}}
+\cfoot{\addressfont\itshape\textcolor{color2}{Last updated on \today}}
+
+
+\begin{document}
+
+%----------HEADING----------
+
+
+\begin{center}
+    \textbf{\Huge \scshape Haruna Umar Adoga} \\ \vspace{1pt}
+    \large 5 Carolside Drive, Glasgow, UK. \\
+    \large{Systems $|$ Networks $|$ Cloud Engineer}\\
+    
+    %%%\large +44 7767943721 $|$ \\
+    
+       {+44 7767943721} $|$ 
+       \large \href{mailto:haruna.umar.adoga@gmail.com}{\underline{Haruna.Umar.Adoga@gmail.com}} $|$ 
+    \large \href{https://linkedin.com/in/haruna-umar-adoga-72865517/}{\underline{LinkedIn}} $|$
+    \href{https://github.com/harunaadoga}{\underline{Github:@harunaadoga}} 
+
+
+\end{center}
+
+
+
+%%%%%%%%%%Summary%%%%%%%%%%%%
+\section{\textbf{Summary}}
+Haruna Adoga is a well-experienced systems and networks engineer with a mix of both research and industry experience.
+
+%-----------EXPERIENCE-----------
+\section{\textbf{Experience}}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Networks \& Systems Engineer}{November 2016 – Present}
+      {Freelance}{}
+      \resumeItemListStart
+      \resumeItem{Networks, Linux and Windows server administration}
+       \resumeItem{Designing and managing Cisco networks for LAN \& WAN connectivity}
+        \resumeItem{Carrying out infrastructure migration to AWS Cloud}
+        \resumeItem{Performing Cloud infrastructure monitoring and configuration}
+        \resumeItem{Using Ansible for day-to-day configuration management}
+
+      \resumeItemListEnd
+
+      
+    \resumeSubheading
+      {Graduate Assistant (Computing) - part-time}{Feb 2021 – Present}
+      {University of Glasgow School of Computing Science}{}
+      \resumeItemListStart
+        \resumeItem{Carrying out web application development with Python-Django framework}
+        \resumeItem{Providing technical support to students in troubleshooting Windows, Mac/Unix, and Linux systems}
+        \resumeItem{Systems and Networks support for Masters level students at the University of Glasgow}
+        \resumeItem{Providing practical and theoretical instruction for Information Technology course for MSc}
+        \resumeItem{Technical documentation writing and white papers}
+        
+      \resumeItemListEnd
+      
+    
+    \resumeSubheading
+      {Systems Administrator - Instructor}{May 2012 – December 2019}
+      {Federal University Lafia}{}
+      \resumeItemListStart
+        \resumeItem{Performed Linux/UNIX system administration and design including storage and web server hosting}
+        \resumeItem{Carried out daily troubleshooting of Windows/Unix clients’ network connectivity issues}
+        \resumeItem{Migrated on-prem servers (storage, web, DB) to AWS Cloud}
+        \resumeItem{Handled the configuration and troubleshooting of Cisco routers and switches for LAN/WAN connectivity}
+      \resumeItemListEnd
+      
+     
+          
+    \resumeSubheading
+      {Technical Support Representative}{March 2011 – May 2012}
+      {Airtel Telecommunications}{}
+      \resumeItemListStart
+        \resumeItem{Actively processing technical service requests from Airtel subscribers}
+        \resumeItem{Served as a tier 1 skilled service desk personnel in incident management}
+        \resumeItem{Carried out hierarchical escalation to tier 2 support engineers for resolution}
+        \resumeItem{Proffered solutions to subscribers to resolve service disruptions, based on SLA}
+      \resumeItemListEnd
+      
+    \resumeSubHeadingListEnd
+
+
+
+%-----------TECHNICAL SKILLS-----------
+\section{\textbf{Technical Skills Summary}}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming \& Scripting}{: Python, Bash, HTML, CSS, SQL} \\
+     \textbf{Cloud \& Configuration Management} {: AWS, Ansible, Terraform}\\
+     \textbf{Networking} {: LAN, WAN, VPC, NFV, SDN, BGP, OSPF, Switching, NAT, Routing \& VxLANS, Spine-Leaf }\\
+     \textbf{Operating Systems} {: RedHat Linux 8, Ubuntu Server, CentOS 7 \& 8, Kali Linux, macOS, Windows} \\
+     \textbf{Security} {: ACLs, Snort IDS, Active Directory }\\
+     \textbf{Developer Tools/Frameworks}{: Git, Docker, Django, GitLab \& Jenkins CI/CD} \\
+     \textbf{Applications}{: Wireshark, VMWare, KVM, VirtualBox,  MS Visio, MS Project, Overleaf}\\
+     \textbf{Libraries}{: NetworkX, Requests, Numpy, Matplotlib, Scapy, Selenium, Beautiful Soup, Scrapy} 
+     
+    }}
+ \end{itemize}
+ 
+
+
+%-----------EDUCATION-----------
+\section{\ \textbf{Education}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Glasgow}{Glasgow, UK}
+      {PhD. Computing Science}{Jan 2020 to Sept 2023}
+  \resumeSubHeadingListEnd
+  
+  
+ %%%%%%%%%School 2%%%%%%%%%
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Hertfordshire}{Hertfordshire, UK}
+      {MSc. Computing Science}{July 2014 to Jan 2016}
+  \resumeSubHeadingListEnd
+
+  
+ %%%%%%%%%School 3%%%%%%%%%
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Maiduguri}{Maiduguri, Nigeria}
+      {Beng. E \& E Engineering}{April 2004 to Dec 2009}
+  \resumeSubHeadingListEnd
+
+
+
+%-----------CERTIFICATIONS-----------
+\section{\textbf{IT Certifications}}
+  \resumeSubHeadingListStart
+
+
+  \resumeSubheading
+      {Amazon Web Services (AWS) Solutions Architect -- Associate}{In View}
+      {Amazon Inc.}
+ 
+    \resumeSubheading
+      {Amazon Web Services (AWS) Cloud Practitioner}{July 2022}
+      {Amazon Inc.}
+
+    \resumeSubheading
+      {Cisco Certified Network Professional (CCNP R \& S)}{Feb 2011 - Expired}
+      {Cisco Systems}{}
+      
+    \resumeSubHeadingListEnd
+    
+
+
+    
+%-----------PROJECTS-----------
+\section{\textbf{Selected Personal Projects}}
+
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Testbed design and evaluation of NFV Platforms} $|$ \emph{SDN, NFV, UNIX, OpenFlow, Docker}}{June 2021}
+          \resumeItemListStart
+            \resumeItem{Carried out the performance evaluation of commonly used virtual network functions in ISP environments }
+            \resumeItem{Real testbed design on commodity servers (UNIX) for hosting network functionalities}
+            \resumeItem{KVM server virtualization}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Hybrid Network Functions Deployment on Commodity Servers} $|$ \emph{Routing, Firewall, IDS}}{September 2020}
+          \resumeItemListStart
+            \resumeItem{Virtualization, Switching, stateful and stateless firewall deployments}
+          \resumeItemListEnd
+       
+      \resumeProjectHeading
+          {\textbf{Network and Server Penetration Testing} $|$ \emph{Unix, Windows, Server Security}}{November 2016}
+          \resumeItemListStart
+            \resumeItem{Carried out a complete pentest lifecycle on a LAN with Linux \& Windows Servers}
+          \resumeItemListEnd
+         
+    \resumeSubHeadingListEnd
+
+
+
+%-----------Publications-----------
+\section{\textbf{Selected Publications - Documentation skills} $|$ \emph{NFV, Switching, UNIX, Virtualization, Containers}}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Network Function Virtualization Frameworks: Review of Challenges}{Feb 2022}
+      {MDPI Future Internet Journal --     \href{https://www.mdpi.com/1999-5903/14/2/59}{\underline{View publication}}}{Basel, Switzerland}
+    
+    \resumeSubheading
+      {Performance Evaluation of Virtual Network Functions}{July 2022}
+      {IEEE Network Softwarization Conference --     \href{https://ieeexplore.ieee.org/document/9844115}{\underline{View publication}}}{Milan, Italy}
+   
+    \resumeSubHeadingListEnd
+
+
+
+%-------------------------------------------
+\end{document}
